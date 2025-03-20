@@ -1,43 +1,25 @@
 const display = document.getElementById("display");
 const buttons = document.querySelectorAll("button");
 
-let funcStr = "";
 
-function getButtonPress(btnPress)
+
+function getValue(button)
 {
-    const value = btnPress.textContent;
-    return btnPress;
+    return button.textContent;
 }
 
-
-function calculate(equation)
+function getType(button)
 {
-    let operands = [0, 0];
-    let operandIndex = 0;
-    let operandsStr = ["",""];
-    for(let char of equation)
-    {
-        if(isNaN(parseInt(char)))
-        {
-            if(char === "=")
-            {
-                
-            }
-            operandIndex++;
-        }
-        else
-        {
-            operands[operandIndex] += char;
-        }
-    }
-    return result;
+    return button.classli
 }
 
 buttons.forEach(button =>
 {
+    console.log(button.classList[0]);
     // button.addEventListener("click", () =>
     // {
-    //     funcStr += getButtonPress(button);
+    //     btnValue = getValue(button);
+    //     btnType = getType(button);
     // });
 
 });
